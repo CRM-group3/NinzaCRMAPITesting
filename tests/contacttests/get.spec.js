@@ -1,7 +1,7 @@
 const { test, expect } = require("@playwright/test");
 const config = require("../../test-data/contacts-json/config.json");
 
-// ✅ Helper for headers
+// Helper for headers
 function getAuthHeaders() {
   return {
     Authorization: `Basic ${Buffer.from(
