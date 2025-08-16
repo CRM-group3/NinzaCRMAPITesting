@@ -16,9 +16,7 @@ const title=faker.person.jobTitle()
 
     const postApiResponse = await request.post('contact/?campaignId=CAM00327',{
         data:{
-            
-            
-                "campaign": 
+                  "campaign": 
                   {"campaignId": "CAM00327",
                   "campaignName": faker.company.name(),
                   "campaignStatus": "active",
@@ -30,7 +28,7 @@ const title=faker.person.jobTitle()
                   "description": faker.lorem.sentence()
                 },
                 "contactName": contactName,
-                "department": department,
+                "department": department,                                                                                                                                                                                                                                                                  
                 "email": email,
                 "mobile": mobile,
                 "officePhone": officePhone,

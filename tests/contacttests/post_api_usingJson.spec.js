@@ -3,8 +3,8 @@ import { test, expect } from '@playwright/test'
 //import { leadrequest1} from '../test-data/leadrequests';
 //import {post_allfields_req} from '../test-data/contactsdata';
 
-const contactAPIRequestBody = require('../../test-data/contactsdata/post_allfields_req.json')
 
+const contactAPIRequestBody = require('../../test-data/contacts-json/post_allfields_req.json')
 test('create post api request using JSON file',async({request})=>{
 
     const postApiResponse = await request.post('contact/?campaignId=CAM00327',{
