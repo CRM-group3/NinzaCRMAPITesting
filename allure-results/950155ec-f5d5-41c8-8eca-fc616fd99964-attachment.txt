@@ -1,0 +1,3 @@
+Status: 422
+Response body: {"timestamp":"2025-08-18T04:51:18.115+0000","status":422,"error":"Unprocessable Entity","message":"Enter a valid mobile number","path":"/admin/create-user"}
+Unprocessable Entity

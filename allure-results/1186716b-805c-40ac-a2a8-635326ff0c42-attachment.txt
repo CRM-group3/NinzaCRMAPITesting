@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00189","empName":null,"mobileNo":"8976269967","email":"Jerry_Bosco95@yahoo.com","dob":null,"experience":0.0,"username":"Maude_Stark","designation":null,"password":"$2a$10$bldcaaiBunE6NBrCXKWb7uJiV8CWpECuKJIvBQsC7JonOB4Jsu/7W","role":"ROLE_EMPLOYEE","department":null}
+Created

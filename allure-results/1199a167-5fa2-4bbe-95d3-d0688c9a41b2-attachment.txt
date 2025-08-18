@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00186","empName":null,"mobileNo":"9451916107","email":"Elissa_Heller@hotmail.com","dob":null,"experience":0.0,"username":"Dino_Beahan64","designation":null,"password":"$2a$10$REzGo9XHj1.KkHwm1h9FcedhLokOmtTzl3t0F/RIHGPClMevt09j.","role":"ROLE_EMPLOYEE","department":null}
+Created

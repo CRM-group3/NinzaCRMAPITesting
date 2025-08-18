@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00152","empName":null,"mobileNo":"8324390398","email":"Vern.Von14@yahoo.com","dob":null,"experience":0.0,"username":"Wilma.Block","designation":null,"password":"$2a$10$g3CzWqZ8OJkFWI7yM4rGuOsN6epp51q.iJLKGHpvZaR2d1d9nXf7u","role":"ROLE_EMPLOYEE","department":null}
+Created

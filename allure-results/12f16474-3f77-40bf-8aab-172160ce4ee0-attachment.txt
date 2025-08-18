@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00205","empName":null,"mobileNo":"7231543481","email":"Quinton.Schoen91@yahoo.com","dob":null,"experience":0.0,"username":"Simeon_Hudson","designation":null,"password":"$2a$10$IQO2OGiImxibX0PAxerehu7bIRZ4a99Wtlbj6c6o9l2ZCui.2db.m","role":"ROLE_EMPLOYEE","department":null}
+Created
