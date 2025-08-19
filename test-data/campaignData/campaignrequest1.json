@@ -1,0 +1,49 @@
+{
+    "headers" : {
+        "username" : "rmgyantra",
+        "password" : "rmgy@9999",
+        "contentType" : "application/json"
+        
+    },
+
+    "mendatoryFieldsCampaign": {
+        "campaignName": "SaveWater",
+        "targetSize": 100
+    },
+
+    "allFieldsCampaign": {
+        "campaignName": "SaveAir",
+        "campaignStatus": "Active",
+        "targetSize": 200,
+        "expectedCloseDate": "08/25/2025",
+        "targetAudience": "general",
+        "description": "ATRRSYTTDUU"
+    },
+
+    "expectedStatus" : 500,
+    "expectedResponse" : {
+        "message" : "Required request body is missing: public org.springframework.http.ResponseEntity<?> com.rmgYantra.loginapp.controller.CampaignController.createCampaign(com.rmgYantra.loginapp.model.Campaign)"
+    },
+
+    "invalidValuesRequestBody" : {
+        "campaignName": "SaveArea",
+        "campaignStatus": "Planned",
+        "targetSize": 250,
+        "expectedCloseDate": "08/28/2025",
+        "targetAudience": "general",
+        "description": "jfkdsgdghkjgfl"
+    },
+
+    "expStatus" : 400,
+
+    "expecStatus" : 500,
+    "expecResponse" : {
+        "message" : "Request method 'GET' not supported"
+    },
+
+    "exStatus" : 409
+
+    
+
+
+}
