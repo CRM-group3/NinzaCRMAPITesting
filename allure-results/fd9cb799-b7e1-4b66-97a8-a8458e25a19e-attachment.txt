@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00121","empName":null,"mobileNo":"8418571720","email":"Alan41@gmail.com","dob":null,"experience":0.0,"username":"Sean.Veum","designation":null,"password":"$2a$10$nqA1Bhu5db470xPSAIOc.uRwmuG3s8RB81jVdhF50/9WmUPVI/uIS","role":"ROLE_EMPLOYEE","department":null}
+Created

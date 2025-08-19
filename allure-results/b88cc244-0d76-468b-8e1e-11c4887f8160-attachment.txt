@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00144","empName":null,"mobileNo":"7280229670","email":"Kristy.Stamm@yahoo.com","dob":null,"experience":0.0,"username":"Mable_Grant12","designation":null,"password":"$2a$10$YGUeWcdSWx9AEh4HZ3Dulu5cHiGJOi47.fUR1PIow4KEmQa0LZlRi","role":"ROLE_EMPLOYEE","department":null}
+Created

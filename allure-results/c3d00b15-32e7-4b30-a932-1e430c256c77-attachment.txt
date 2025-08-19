@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00136","empName":null,"mobileNo":"7806957327","email":"Maria_Dooley-Heaney@hotmail.com","dob":null,"experience":0.0,"username":"Wilhelm.Jacobson","designation":null,"password":"$2a$10$NKt5Ns688wLYvQBBJj/7BeN1iXyKXel2mMEeJlafQ3acBSocWGXTO","role":"ROLE_EMPLOYEE","department":null}
+Created
