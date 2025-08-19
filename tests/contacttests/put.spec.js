@@ -35,6 +35,7 @@ const contactHelper = new ContactHelper();
         const campaignId = campaign.campaignId;
         expect(campaignId).toBeTruthy();
 
+        //create contact
         const { response: createResponse } = await contactHelper.createContact(request,campaignId);
         expect(createResponse.status()).toBe(201);
         
