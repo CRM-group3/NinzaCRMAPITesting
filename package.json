@@ -13,10 +13,7 @@
     "@playwright/test": "^1.54.2",
     "@types/node": "^24.2.1",
     "ajv": "^8.17.1",
-<<<<<<< HEAD
-=======
     "ajv-formats": "^3.0.1",
->>>>>>> sowmya
     "allure-commandline": "^2.34.1",
     "allure-playwright": "^3.3.3",
     "playwright": "^1.54.2"
