@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00151","empName":null,"mobileNo":"7894015467","email":"Amelia.Kub58@gmail.com","dob":null,"experience":0.0,"username":"Carlos93","designation":null,"password":"$2a$10$9u4grg3NoWFOmcQBmkXXb.5M/KZZWkIMA73yueqdOBVS/gFAiRlf.","role":"ROLE_EMPLOYEE","department":null}
+Created

@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00214","empName":null,"mobileNo":"8357153459","email":"Watson.Farrell@gmail.com","dob":null,"experience":0.0,"username":"Kyra12","designation":null,"password":"$2a$10$jKgffyLZOLyiYPwLfXBn9.BBwkKMWpHR.2aYVTxFAbkUlM8U1K9te","role":"ROLE_EMPLOYEE","department":null}
+Created

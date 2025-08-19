@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00115","empName":null,"mobileNo":"9350325136","email":"Fern_Grant@yahoo.com","dob":null,"experience":0.0,"username":"Kayden.Kuvalis","designation":null,"password":"$2a$10$5lJNpOXn3vcznjFmbJ5pUeg6WbYaalh537q9dlM6Ejr6yWK2LwZRy","role":"ROLE_EMPLOYEE","department":null}
+Created

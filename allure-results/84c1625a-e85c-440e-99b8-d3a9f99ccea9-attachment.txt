@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00130","empName":null,"mobileNo":"7696392117","email":"Zakary.Weissnat@hotmail.com","dob":null,"experience":0.0,"username":"Jeffry.Shields59","designation":null,"password":"$2a$10$ziiCbwashDXqg9A8pkQCFe7LqVUaI7YYalV2cSvYLfFOal2V2Kjha","role":"ROLE_EMPLOYEE","department":null}
+Created

@@ -1,0 +1,2 @@
+Status: 500
+Response body: {"timestamp":"2025-08-18T07:53:13.664+0000","status":500,"error":"Internal Server Error","message":"Cannot invoke \"String.trim()\" because the return value of \"com.rmgYantra.loginapp.model.Employee.getUsername()\" is null","path":"/admin/create-user"}

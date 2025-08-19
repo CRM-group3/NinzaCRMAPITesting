@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00111","empName":null,"mobileNo":"8024349530","email":"Cristina9@gmail.com","dob":null,"experience":0.0,"username":"Madeline55","designation":null,"password":"$2a$10$DF2rpm.D2vH.g02mgR40l.d1fXQzlELYD35essIITGUqqI3KqjalO","role":"ROLE_EMPLOYEE","department":null}
+Created

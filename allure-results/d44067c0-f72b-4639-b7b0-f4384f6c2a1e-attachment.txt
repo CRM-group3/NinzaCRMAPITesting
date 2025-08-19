@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00206","empName":null,"mobileNo":"8321668228","email":"Josefina_Monahan@hotmail.com","dob":null,"experience":0.0,"username":"Name58","designation":null,"password":"$2a$10$VgZLdckKvhUKYpN78KuFL.CBw6OFUK9IzWPG8Ajr.9DY/c6b4Be.C","role":"ROLE_EMPLOYEE","department":null}
+Created

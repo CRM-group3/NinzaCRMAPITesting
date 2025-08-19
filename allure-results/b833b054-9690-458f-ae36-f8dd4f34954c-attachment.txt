@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00107","empName":null,"mobileNo":"8808615212","email":"Kimberly_Quigley@hotmail.com","dob":null,"experience":0.0,"username":"Stanley53","designation":null,"password":"$2a$10$C20jh/HCieoCp.kK1TEqbOe.FrX/ClyQS6XSBGJNI6Jq36IRS34ru","role":"ROLE_EMPLOYEE","department":null}
+Created

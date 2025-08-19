@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00207","empName":null,"mobileNo":"8498090617","email":"Rico.Gislason@hotmail.com","dob":null,"experience":0.0,"username":"Guiseppe.Lubowitz","designation":null,"password":"$2a$10$5sV4Rdr89RmR8PKfl9UHeeV/saSXqRSAmWcb2dtUMuk8vMWptwlMC","role":"ROLE_EMPLOYEE","department":null}
+Created
