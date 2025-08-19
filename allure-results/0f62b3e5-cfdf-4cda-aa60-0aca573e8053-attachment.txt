@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00127","empName":null,"mobileNo":"8889561480","email":"Corrine.Weissnat@yahoo.com","dob":null,"experience":0.0,"username":"Pierce_Kuhlman","designation":null,"password":"$2a$10$un2Put72CZ3Ge39fq6lSs.84xVgGnESHy6ZRCZBZP5xxFKUwS5NMa","role":"ROLE_EMPLOYEE","department":null}
+Created

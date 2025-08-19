@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00047","empName":null,"mobileNo":"7776765489","email":"achi@b11.com","dob":null,"experience":0.0,"username":"bpcnchigh","designation":null,"password":"$2a$10$LsJt/fCMPWw.uq8gMq0uOupjxuIZ7rTN7H2Q5JhimRYzgYrJ7xdxq","role":"ROLE_EMPLOYEE","department":null}
+Created

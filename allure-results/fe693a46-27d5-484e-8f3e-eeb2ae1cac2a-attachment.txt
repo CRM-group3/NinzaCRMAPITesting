@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00209","empName":null,"mobileNo":"7966223056","email":"Mya61@yahoo.com","dob":null,"experience":0.0,"username":"Sheldon7","designation":null,"password":"$2a$10$75HmgNT2mVxXpK34.gf7fuB7A06IrnXEyVUsDpwLup5Hjj1Y991Ki","role":"ROLE_EMPLOYEE","department":null}
+Created

@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00200","empName":null,"mobileNo":"8399076093","email":"Gladyce38@gmail.com","dob":null,"experience":0.0,"username":null,"designation":null,"password":"$2a$10$vd1rFpWLkhkGbRGgRxtgZeEpDEoCopdFXGcUGlHe8F6oXiC3pudye","role":"ROLE_EMPLOYEE","department":null}
+Created

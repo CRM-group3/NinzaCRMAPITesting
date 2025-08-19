@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00105","empName":null,"mobileNo":"9031501516","email":"Keith_Barrows13@gmail.com","dob":null,"experience":0.0,"username":"Gene44","designation":null,"password":"$2a$10$HJc.moHmUBiiYeDzoiR02u0MLYiBidsF87BD7OYNvcsQG.0.mVqCK","role":"ROLE_EMPLOYEE","department":null}
+Created

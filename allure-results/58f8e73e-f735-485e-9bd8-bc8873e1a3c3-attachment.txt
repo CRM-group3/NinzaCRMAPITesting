@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00210","empName":null,"mobileNo":"9694185486","email":"Jadyn1@yahoo.com","dob":null,"experience":0.0,"username":"Verdie_OKeefe20","designation":null,"password":"$2a$10$UVxd.grzNFnjUFIHint0uO8qehkdN.z/hNguW.0yjoWTpTK7W/cJK","role":"ROLE_EMPLOYEE","department":null}
+Created

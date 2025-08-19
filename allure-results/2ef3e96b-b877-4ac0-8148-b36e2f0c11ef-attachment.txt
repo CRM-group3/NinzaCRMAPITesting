@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00142","empName":null,"mobileNo":"7312622809","email":"Emilie.Dicki@hotmail.com","dob":null,"experience":0.0,"username":"Jeremy21","designation":null,"password":"$2a$10$0vIZCOtzTs9eUEzSjX2mfuBrt4JjhgJp9.ZEQ.RdOs9xWXArN8Y9S","role":"ROLE_EMPLOYEE","department":null}
+Created

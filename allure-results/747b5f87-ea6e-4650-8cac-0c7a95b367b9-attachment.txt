@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00117","empName":null,"mobileNo":"9076841467","email":"Braxton.Wyman@gmail.com","dob":null,"experience":0.0,"username":"Avery.Schiller","designation":null,"password":"$2a$10$qjWj9cde6lITOWvXwtMTIOO3rlDkyqUz50i4XPEegaysrl7YvCs6i","role":"ROLE_EMPLOYEE","department":null}
+Created
