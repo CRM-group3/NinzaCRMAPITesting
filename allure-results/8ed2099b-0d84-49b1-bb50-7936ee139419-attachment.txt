@@ -1,0 +1,9 @@
+{
+  campaignId: 'CAM05895',
+  campaignName: 'SaveWater',
+  campaignStatus: null,
+  targetSize: 100,
+  expectedCloseDate: null,
+  targetAudience: null,
+  description: null
+}

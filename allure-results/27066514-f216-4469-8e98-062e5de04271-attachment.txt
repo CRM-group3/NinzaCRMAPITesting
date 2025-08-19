@@ -1,0 +1,9 @@
+{
+  campaignId: 'CAM05873',
+  campaignName: 'SaveChild',
+  campaignStatus: 'Planned',
+  targetSize: 150,
+  expectedCloseDate: '08/25/2025',
+  targetAudience: 'general',
+  description: 'og;herolhj;j;'
+}

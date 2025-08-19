@@ -1,0 +1,9 @@
+{
+  campaignId: 'CAM05897',
+  campaignName: 'SaveAir',
+  campaignStatus: 'Active',
+  targetSize: 200,
+  expectedCloseDate: '08/25/2025',
+  targetAudience: 'general',
+  description: 'ATRRSYTTDUU'
+}

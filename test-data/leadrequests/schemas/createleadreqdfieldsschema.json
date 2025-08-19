@@ -1,0 +1,123 @@
+
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "leadId": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "company": {
+        "type": "string"
+      },
+      "leadSource": {
+        "type": "string"
+      },
+      "industry": {
+        "type": "string"
+      },
+      "annualRevenue": {
+        "type": "integer"
+      },
+      "noOfEmployees": {
+        "type": "integer"
+      },
+      "phone": {
+        "type": "string"
+      },
+      "email": {
+        "type": "null"
+      },
+      "secondaryEmail": {
+        "type": "null"
+      },
+      "website": {
+        "type": "null"
+      },
+      "leadStatus": {
+        "type": "string"
+      },
+      "rating": {
+        "type": "null"
+      },
+      "assignedTo": {
+        "type": "null"
+      },
+      "address": {
+        "type": "null"
+      },
+      "city": {
+        "type": "null"
+      },
+      "country": {
+        "type": "null"
+      },
+      "postalCode": {
+        "type": "integer"
+      },
+      "description": {
+        "type": "null"
+      },
+      "campaign": {
+        "type": "object",
+        "properties": {
+          "campaignId": {
+            "type": "string"
+          },
+          "campaignName": {
+            "type": "string"
+          },
+          "campaignStatus": {
+            "type": "string"
+          },
+          "targetSize": {
+            "type": "integer"
+          },
+          "expectedCloseDate": {
+            "type": "string"
+          },
+          "targetAudience": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "campaignId",
+          "campaignName",
+          "campaignStatus",
+          "targetSize",
+          "expectedCloseDate",
+          "targetAudience",
+          "description"
+        ]
+      }
+    },
+    "required": [
+      "leadId",
+      "name",
+      "company",
+      "leadSource",
+      "industry",
+      "annualRevenue",
+      "noOfEmployees",
+      "phone",
+      "email",
+      "secondaryEmail",
+      "website",
+      "leadStatus",
+      "rating",
+      "assignedTo",
+      "address",
+      "city",
+      "country",
+      "postalCode",
+      "description",
+      "campaign"
+    ]
+  }
+  
+  
