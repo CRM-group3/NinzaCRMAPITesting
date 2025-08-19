@@ -1,0 +1,2 @@
+Status: 409
+Response body: {"timestamp":"2025-08-18T08:00:56.143+0000","status":409,"error":"Conflict","message":"username: bpgh already exists","path":"/admin/create-user"}

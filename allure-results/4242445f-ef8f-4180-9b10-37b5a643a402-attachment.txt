@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00197","empName":null,"mobileNo":"7619116579","email":"Arden78@yahoo.com","dob":null,"experience":0.0,"username":null,"designation":null,"password":"$2a$10$PNPG/oU8zyGo6HFXvBoNHuTzWNvl9reE6b1snbYwoy.69oIZrKX4u","role":"ROLE_EMPLOYEE","department":null}
+Created

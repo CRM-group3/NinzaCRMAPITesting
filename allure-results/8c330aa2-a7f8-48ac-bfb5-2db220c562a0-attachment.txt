@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00193","empName":null,"mobileNo":"7804555091","email":"Fleta_Boyer49@hotmail.com","dob":null,"experience":0.0,"username":"Kitty74","designation":null,"password":"$2a$10$hAuhpdkA1GjiV59QDE5EZOLl/KECj7J8/iIiq41b3OQquZxOXgKxa","role":"ROLE_EMPLOYEE","department":null}
+Created

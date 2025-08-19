@@ -1,0 +1,31 @@
+{
+    "headers" : {
+        "username" : "rmgyantra",
+        "password" : "rmgy@9999",
+        "contentType" : "application/json"
+        
+    },
+
+    "invalidHeaders" : {
+        "username" : "rmgyantr",
+        "password" : "rmgy@999",
+        "contentType" : "application/json"
+    },
+      
+    "expectedStatusCode" : 200,
+
+    "expecStatusCode" : 500,
+
+    "expecResponse" :{
+        "message" : "Request method 'POST' not supported"
+    },
+
+    "expStatusCode" : 401
+
+
+
+
+}
+
+
+

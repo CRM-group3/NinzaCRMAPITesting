@@ -15,11 +15,18 @@
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "allure-commandline": "^2.34.1",
-    "allure-playwright": "^3.3.3"
+    "allure-playwright": "^3.3.3",
+    "playwright": "^1.54.2"
   },
   "dependencies": {
+<<<<<<< HEAD
     
+=======
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+>>>>>>> f90da946a23e6297a09f76cd9936a0a0e0fd0d0f
     "dotenv": "^17.2.1",
     "luxon": "^3.7.1"
   }
 }
+

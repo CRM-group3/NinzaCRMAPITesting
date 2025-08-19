@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00037","empName":null,"mobileNo":"2911112277","email":"aqca@b11.com","dob":null,"experience":0.0,"username":"bpcngh","designation":null,"password":"$2a$10$3ivKLok/k2c.JItIsK8DuOZDGMer.qz10U9kxadw6mOU0khn7B/1S","role":"ROLE_EMPLOYEE","department":null}
+Created

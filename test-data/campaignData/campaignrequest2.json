@@ -1,0 +1,41 @@
+{
+    "headers": {
+        "username": "rmgyantr",
+        "password": "rmgy@999",
+        "contentType": "application/json"
+    },
+    "campaignBody": {
+        "campaignName": "SaveChild",
+        "campaignStatus": "Planned",
+        "targetSize": 150,
+        "expectedCloseDate": "08/25/2025",
+        "targetAudience": "general",
+        "description": "og;herolhj;j;"
+    },
+    "expectedStatus": 401,
+    "negativeTargetSizeBody": {
+        "campaignName": "SaveEarth",
+        "campaignStatus": "Completed",
+        "description": "dwuqgfiqwfeg",
+        "expectedCloseDate": "08/25/2025",
+        "targetAudience": "General",
+        "targetSize": -10
+    },
+    "expecStatus": 400,
+    "invalidDateFormatBody": {
+        "campaignName": "SaveEarth",
+        "campaignStatus": "Completed",
+        "description": "dwuqgfiqwfeg",
+        "expectedCloseDate": "2025/08/22",
+        "targetAudience": "General",
+        "targetSize": 200
+    },
+    "postRequestBody": {
+        "campaignName": "NewYearSale",
+        "campaignStatus": "Ongoing",
+        "description": "dwuqgfiqwfeg",
+        "expectedCloseDate": "2025/08/30",
+        "targetAudience": "GeneralPublic",
+        "targetSize": 1000
+    }
+}
