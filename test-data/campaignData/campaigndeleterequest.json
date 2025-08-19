@@ -1,0 +1,33 @@
+{
+    "headers" : {
+        "username" : "rmgyantra",
+        "password" : "rmgy@9999",
+        "contentType" : "application/json"
+        
+    },
+
+    "invalidHeaders" : {
+        "username" : "rmgyantr",
+        "password" : "rmgy@999",
+        "contentType" : "application/json"
+    },
+
+    "queryParam" : "?campaignId=CAM06430" ,
+
+
+    "createdCampaignBody" : {
+        "campaignName": "SaveGirlChild",
+        "campaignStatus": "Planned",
+        "targetSize": 350,
+        "expectedCloseDate": "08/28/2025",
+        "targetAudience": "Public",
+        "description": "gjdkgejegkrgbrlgk"
+    },
+
+
+    "expecStatusCode" : 201,
+    "expectedStatusCode" : 204
+
+
+
+}

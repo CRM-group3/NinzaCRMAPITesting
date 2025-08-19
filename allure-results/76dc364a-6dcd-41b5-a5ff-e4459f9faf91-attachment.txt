@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00110","empName":null,"mobileNo":"8264515729","email":"Glen_Jerde@hotmail.com","dob":null,"experience":0.0,"username":"Wyatt85","designation":null,"password":"$2a$10$wepGYCgLbKDOwo4kuMBNAu36J1Wk8lE01BTcr/7RY4rg4l3tF8YdC","role":"ROLE_EMPLOYEE","department":null}
+Created

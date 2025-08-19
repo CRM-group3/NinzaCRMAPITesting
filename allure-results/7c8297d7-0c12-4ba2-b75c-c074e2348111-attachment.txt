@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00192","empName":null,"mobileNo":"9142032452","email":"Reina.Hintz94@yahoo.com","dob":null,"experience":0.0,"username":"Eveline_Ziemann-Kassulke8","designation":null,"password":"$2a$10$mCifxdg6vymIC2NxAoGqD.VoHDhk2wHP.jvNVZGBknBqYGXgnXC1W","role":"ROLE_EMPLOYEE","department":null}
+Created

@@ -1,0 +1,41 @@
+{
+    "headers" : {
+        "username" : "rmgyantra",
+        "password" : "rmgy@9999",
+        "contentType" : "application/json"
+        
+    },
+
+    "invalidHeaders" : {
+        "username" : "rmgyantr",
+        "password" : "rmgy@999",
+        "contentType" : "application/json"
+    },
+
+    "queryParam" : "?campaignId=CAM06430" ,
+
+
+    "createdCampaignBody" : {
+        "campaignName": "StopPollution",
+        "campaignStatus": "Planned",
+        "targetSize": 250,
+        "expectedCloseDate": "08/22/2025",
+        "targetAudience": "Public",
+        "description": "gjdkgejegkrgbrlgk"
+    },
+
+    "updatedCampaignBody" : {
+        "campaignName": "StopPollute",
+        "campaignStatus": "Active",
+        "targetSize": 300,
+        "expectedCloseDate": "08/25/2025",
+        "targetAudience": "UpdatedPublic",
+        "description": "Updated"
+    },
+    "expecStatusCode" : 201,
+    "expectedStatusCode" : 200
+
+
+
+}
+      

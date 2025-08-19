@@ -1,0 +1,31 @@
+{
+    "address": "123,playstreet,Denver",
+    "annualRevenue": 100000,
+    "assignedTo": "mkt lead",
+    "campaign": {
+      "campaignId:": "CAM05607",
+      "campaignName": "diwali sale-pressure cooker",
+     "campaignStatus": "ongoing",
+     "description": "discounted product",
+     "expectedCloseDate": "10/14/2025",
+     "targetAudience": "Ladies",
+     "targetSize": 50000
+  
+      
+    },
+    "city": "denver",
+    "company": "abc corp",
+    "country": "india",
+    "description": "test prod",
+    "email": "abc@xyz.com",
+    "industry": "Manufacturing",
+    "leadSource": "diwali sale",
+    "leadStatus": "initial",
+    "name": "",
+    "noOfEmployees": 100,
+    "phone": "9195556888",
+    "postalCode": 56403,
+    "rating": "excellent",
+    "secondaryEmail": "xyz@abc.com",
+    "website": "http://www.abccorp.com"
+  }

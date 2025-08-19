@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00211","empName":null,"mobileNo":"8561296703","email":"Webster70@yahoo.com","dob":null,"experience":0.0,"username":"Hilma_Hartmann82","designation":null,"password":"$2a$10$zLhHYWF3lF/iJ8vzMuHs6ehLMqI1dzjZ35tNcyFjnNireac6bxp/G","role":"ROLE_EMPLOYEE","department":null}
+Created

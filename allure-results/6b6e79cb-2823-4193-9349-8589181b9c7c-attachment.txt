@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00123","empName":null,"mobileNo":"7603261314","email":"Jaden.Ortiz90@yahoo.com","dob":null,"experience":0.0,"username":"Kendra_Carroll-Hammes","designation":null,"password":"$2a$10$0zQzvoaltWeaiETXKHyAROFZWiszCjyAk69XcLKCavR2Puy.JQojC","role":"ROLE_EMPLOYEE","department":null}
+Created

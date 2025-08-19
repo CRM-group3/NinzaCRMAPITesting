@@ -1,0 +1,19 @@
+{
+    "campaign": 
+      {"campaignId": "CAM00327",
+      "campaignName": "LegoAssocation",
+      "campaignStatus": "active",
+      "targetSize": 7,
+      "expectedCloseDate": "2025-08-16",
+      "targetAudience": "34",
+      "description": ""
+    },
+    "contactName": "Anila Gode",
+    "department": "dept",
+    "email": "anila@example.com",
+    "mobile": "9043423600",
+    "officePhone": "0223654320",
+    "organizationName": "department",
+    "title": "BA"
+  }
+  
