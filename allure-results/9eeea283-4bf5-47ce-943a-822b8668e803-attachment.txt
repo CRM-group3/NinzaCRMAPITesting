@@ -1,0 +1,2 @@
+Status: 201
+Response body: {"empId":"UID_00204","empName":null,"mobileNo":"1111112233","email":"annmc@b11.com","dob":null,"experience":0.0,"username":"bpgh","designation":null,"password":"$2a$10$rXvfNo1o/wpAvI0evCvQ5OaK6W5H6FshOyKnSEBBrnvCV.1UXHz5S","role":"ROLE_EMPLOYEE","department":null}

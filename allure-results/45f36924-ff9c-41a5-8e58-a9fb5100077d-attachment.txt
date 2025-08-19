@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00056","empName":null,"mobileNo":"7700765489","email":"nirchi@b11.com","dob":null,"experience":0.0,"username":"nirbpcnchigh","designation":null,"password":"$2a$10$oAtw.NanE0MnnxANim4UWO9zT9.p0MOx3wIbfERSs.jzf2Zjkp1ey","role":"ROLE_EMPLOYEE","department":null}
+Created

@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00212","empName":null,"mobileNo":"7421269700","email":"Clotilde_Wilderman88@yahoo.com","dob":null,"experience":0.0,"username":"Triston52","designation":null,"password":"$2a$10$6JheZm6mQNTUqcWN1R.FO.8QwtwiqSOwMO8mw3ItjywZO6DHtP0JO","role":"ROLE_EMPLOYEE","department":null}
+Created

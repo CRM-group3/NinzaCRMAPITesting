@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00118","empName":null,"mobileNo":"9257675995","email":"Darryl43@hotmail.com","dob":null,"experience":0.0,"username":"Estella97","designation":null,"password":"$2a$10$R78wRlAbjlJy3XqIBZTOE.6DYZA5Z6y.g/T7ajF82yjEJ88AW7YlC","role":"ROLE_EMPLOYEE","department":null}
+Created

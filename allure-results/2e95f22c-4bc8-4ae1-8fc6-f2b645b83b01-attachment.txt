@@ -1,0 +1,3 @@
+Status: 201
+Response body: {"empId":"UID_00203","empName":null,"mobileNo":"9633115723","email":"Griffin.Stanton@hotmail.com","dob":null,"experience":0.0,"username":null,"designation":null,"password":"$2a$10$FthhAO2un2IdQJdFBLpXPes4X0y6K9Ham3NP4apFPAPcVNoP2sSyS","role":"ROLE_EMPLOYEE","department":null}
+Created
