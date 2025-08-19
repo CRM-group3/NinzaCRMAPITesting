@@ -2,17 +2,17 @@ import { test, expect } from '@playwright/test';
 
 const campaignData = require('../../test-data/campaignData/campaignrequest1.json');
 const campaignData2 = require('../../test-data/campaignData/campaignrequest2.json');
-//const campaignSchema = require('../../schemas/createCampaignSchema.json');
+const { validateSchema } = require('../../helperClasses/schemaValidator');
+const campaignSchema = require('../../schemas/createCampaignSchema.js');
+const campaign2Schema = require('../../schemas/createCampaign2Schema.js');
 
-/*import Ajv from "ajv";
-import addFormats from "ajv-formats";
-import campaignSchema from "../../schemas/createCampaignSchema.json"
+const Ajv = require("ajv");
+const addFormats = require("ajv-formats");
 
-const ajv = new Ajv({ allErrors : true });
-addFormats(ajv);    // <-- this enables "date", "date-time", "email", etc.  */
+const ajv = new Ajv({ allErrors: true, strict: false });
+addFormats(ajv);
 
-
-test.describe('Create Campaign API Tests', async (request) => {
+//test.describe('Create Campaign API Tests', async (request) => {
 
     test('Create a Campaign with mendatory fields', async ({ request }) => {
 
@@ -33,22 +33,13 @@ test.describe('Create Campaign API Tests', async (request) => {
         expect(postApiResponseBody.campaignName).toBe(campaignData.mendatoryFieldsCampaign.campaignName);
         expect(postApiResponseBody.targetSize).toBe(campaignData.mendatoryFieldsCampaign.targetSize);
 
-        // const schema = z.object({
-        //     campaignId: z.string(),
-        //     campaignName: z.string(),
-        //     targetSize: z.int()
-
-        // });
-
-        // expect(() => {
-        //     schema.parse(postResponseBody);
-        // }).not.toThrow();
+     //   expect(validateSchema(campaign2Schema)).toBe(true);
 
     });
 
 
 
-    test.only('Create a Campaign with all fields', async ({ request }) => {
+    test('Create a Campaign with all fields', async ({ request }) => {
 
         const postApiResponse = await request.post(`campaign`, {
 
@@ -56,6 +47,7 @@ test.describe('Create Campaign API Tests', async (request) => {
             data: campaignData.allFieldsCampaign
 
         });
+
         // Validate status code
     //    expect(postApiResponse.ok()).toBeTruthy();
         expect(postApiResponse.status()).toBe(201);
@@ -66,11 +58,7 @@ test.describe('Create Campaign API Tests', async (request) => {
         expect(postApiResponseBody.campaignId).toBeTruthy();
         expect(postApiResponseBody.campaignName).toBe(campaignData.allFieldsCampaign.campaignName);
         
-     //   const data = await postApiResponse.json();
-     //   const validate = ajv.compile(campaignSchema);
-     //   const valid = validate(data);
-
-      //  expect(valid, JSON.stringify(validate.errors, null, 2)).toBe(true);
+      //   expect(validateSchema(campaignSchema)).toBe(true);
 
     });
 
@@ -201,4 +189,4 @@ test.describe('Create Campaign API Tests', async (request) => {
 
 
 
-});
+//});
