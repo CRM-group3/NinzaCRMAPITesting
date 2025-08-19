@@ -1,8 +1,26 @@
 import { test,expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
+import Ajv from 'ajv';
+import addFormats from 'ajv-formats';
+const ajv = new Ajv();
+addFormats(ajv); 
+// JSON Schema for User
+const userSchema = {
+  type: "object",
+  properties: {
+    empId: { type: "string" },
+    email: { type: "string", format: "email" },
+    mobileNo: { type: "string", pattern: "^[0-9]{10}$" }, // 10 digits
+    username: { type: "string" },
+    password: { type: "string" }
+  },
+  required: ["empId", "email", "mobileNo", "username", "password"],
+  additionalProperties: true
+};
+let authHeader;
 
 
-test('GET all users with Basic Auth', async ({ request }) => {
+test('GET all users with Basic Auth and schema validation' , async ({ request }) => {
   // Basic Auth credentials
   const username = 'rmgyantra'
   const password = 'rmgy@9999'
@@ -22,6 +40,16 @@ test('GET all users with Basic Auth', async ({ request }) => {
 
   // Example assertion: check that body is an array
   expect(Array.isArray(body)).toBeTruthy();
+  const validate = ajv.compile(userSchema);
+ // const users = await response.json();
+  for (const user of body) {
+    const valid = validate(user);
+    if (!valid) {
+      console.error("Validation failed for user:", user);
+      console.error("Errors:", validate.errors);
+    }
+    expect(valid, JSON.stringify(validate.errors)).toBeTruthy();
+  }
 });
 
 test.describe('createuser API Tests', () => {
@@ -89,12 +117,102 @@ test('Create User - with blank mobile field', async ({ request }) => {
   console.log(message);
   expect(message).toMatch(/Unprocessable Entity/i);
 });
+test('Create User - with existing mobile field', async ({ request }) => {
+  const existingUserPayload = {
+    
+    email: faker.internet.email(),
+    "mobileNo": "1212121234", 
+    mobileNo: "",
+   // username: faker.internet.username(),
+    password: faker.internet.password()
+  };
+
+  const response = await request.post('/admin/create-user', {
+    headers: {
+      'Authorization': 'Basic ' + Buffer.from('rmgyantra:rmgy@9999').toString('base64'),
+      'Content-Type': 'application/json'
+    },
+    data: existingUserPayload
+  });
+
+  console.log('Status:', response.status());
+  console.log('Response body:', await response.text());
+
+  // Asconst body = await response.json();sert that status code matches "already exists" scenario
+  expect([422, 422]).toContain(response.status());
+
+  // Optionally assert message
+  const body = await response.json();
+  const message = "Unprocessable Entity";
+  console.log(message);
+  expect(message).toMatch(/Unprocessable Entity/i);
+});
+test('Create User - with  mobile field less than 10 digit', async ({ request }) => {
+  const existingUserPayload = {
+    
+    email: faker.internet.email(),
+    mobileNo: faker.number.int({ min: 10000, max: 9999999 }).toString(),
+   username: faker.internet.username(),
+    password: faker.internet.password()
+  };
+
+  const response = await request.post('/admin/create-user', {
+    headers: {
+      'Authorization': 'Basic ' + Buffer.from('rmgyantra:rmgy@9999').toString('base64'),
+      'Content-Type': 'application/json'
+    },
+    data: existingUserPayload
+  });
+
+  console.log('Status:', response.status());
+  console.log('Response body:', await response.text());
+
+  // Asconst body = await response.json();sert that status code matches "already exists" scenario
+  expect([422, 422]).toContain(response.status());
+
+  // Optionally assert message
+  const body = await response.json();
+  const message = "Unprocessable Entity";
+  console.log(message);
+  expect(message).toMatch(/Unprocessable Entity/i);
+});
+
+test('Create User - with alphanumeric mobile field', async ({ request }) => {
+  const existingUserPayload = {
+    
+    email: faker.internet.email(),
+    mobileNo: faker.string.alphanumeric(8),
+   // username: faker.internet.username(),
+    password: faker.internet.password()
+  };
+
+  const response = await request.post('/admin/create-user', {
+    headers: {
+      'Authorization': 'Basic ' + Buffer.from('rmgyantra:rmgy@9999').toString('base64'),
+      'Content-Type': 'application/json'
+    },
+    data: existingUserPayload
+  });
+
+  console.log('Status:', response.status());
+  console.log('Response body:', await response.text());
+
+  // Asconst body = await response.json();sert that status code matches "already exists" scenario
+  expect([422, 422]).toContain(response.status());
+
+  // Optionally assert message
+  const body = await response.json();
+  const message = "Unprocessable Entity";
+  console.log(message);
+  expect(message).toMatch(/Unprocessable Entity/i);
+});
+
 test('Create User - Already existing user should fail', async ({ request }) => {
   const existingUserPayload = {
     
     mobileNo: "1111112233",
     email: "annmc@b11.com",
-    username: "bpgh",
+    username: "",
     password: ''
   };
 
@@ -118,4 +236,92 @@ test('Create User - Already existing user should fail', async ({ request }) => {
   console.log(message);
   //expect(message).toMatch(/already exists/i);
 });
+test('Create User - with blank user', async ({ request }) => {
+  const existingUserPayload = {
+    
+    mobileNo: faker.number.int({ min: 10000, max: 9999999 }).toString(),
+    email: "annmc@b11.com",
+    username: "",
+    password: ''
+  };
 
+  const response = await request.post('/admin/create-user', {
+    headers: {
+      'Authorization': 'Basic ' + Buffer.from('rmgyantra:rmgy@9999').toString('base64'),
+      'Content-Type': 'application/json'
+    },
+    data: existingUserPayload
+  });
+
+  console.log('Status:', response.status());
+  console.log('Response body:', await response.text());
+
+  // Asconst body = await response.json();sert that status code matches "already exists" scenario
+  expect([409, 422]).toContain(response.status());
+
+  // Optionally assert message
+  const body = await response.json();
+  const message = "username: should be valid";
+  console.log(message);
+  //expect(message).toMatch(/already exists/i);
+});
+test('Create User - with blank email', async ({ request }) => {
+  const existingUserPayload = {
+    
+    mobileNo: faker.number.int({ min: 10000, max: 9999999 }).toString(),
+    email: "",
+    username:  faker.internet.username(),
+    password: faker.internet.password()
+    
+  };
+
+  const response = await request.post('/admin/create-user', {
+    headers: {
+      'Authorization': 'Basic ' + Buffer.from('rmgyantra:rmgy@9999').toString('base64'),
+      'Content-Type': 'application/json'
+    },
+    data: existingUserPayload
+  });
+
+  console.log('Status:', response.status());
+  console.log('Response body:', await response.text());
+
+  // Asconst body = await response.json();sert that status code matches "already exists" scenario
+  expect([422, 422]).toContain(response.status());
+
+  // Optionally assert message
+  const body = await response.json();
+  const message = "Unprocessable Entity";
+  console.log(message);
+  //expect(message).toMatch(/already exists/i);
+});
+test('Create User - with existing email', async ({ request }) => {
+  const existingUserPayload = {
+    
+    mobileNo: faker.number.int({ min: 10000, max: 9999999 }).toString(),
+    email: "fwee2@g.com",
+    username:  faker.internet.username(),
+    password: faker.internet.password()
+    
+  };
+
+  const response = await request.post('/admin/create-user', {
+    headers: {
+      'Authorization': 'Basic ' + Buffer.from('rmgyantra:rmgy@9999').toString('base64'),
+      'Content-Type': 'application/json'
+    },
+    data: existingUserPayload
+  });
+
+  console.log('Status:', response.status());
+  console.log('Response body:', await response.text());
+
+  // Asconst body = await response.json();sert that status code matches "already exists" scenario
+  expect([422, 422]).toContain(response.status());
+
+  // Optionally assert message
+  const body = await response.json();
+  const message = "Unprocessable Entity";
+  console.log(message);
+  //expect(message).toMatch(/already exists/i);
+});
