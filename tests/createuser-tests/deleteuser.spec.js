@@ -1,12 +1,19 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
+test.describe('createuser API Tests', () => {
+
+    test('log message to console', async ({ request }) => {
+      console.log('This is my API test placeholder');
+    });
+  
+  });
 
 test('Delete user by userId', async ({ request }) => {
   // Replace with your actual userId
   const userId = "UID_02048";  
 
   // Send DELETE request
-  const response = await request.delete(`/admin/user`, {
+  const response = await request.delete('/admin/user', {
     params: { userId },  // query parameter
     headers: {
       "Authorization": "Basic " + Buffer.from("admin:password").toString("base64"),
