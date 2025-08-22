@@ -29,11 +29,14 @@ addFormats(ajv);
         const postApiResponseBody = await postApiResponse.json();
         console.log(postApiResponseBody);
 
+        console.log("*************");
+        console.log(typeof response.body, postApiResponse.body);
+        
         expect(postApiResponseBody.campaignId).toBeTruthy();
         expect(postApiResponseBody.campaignName).toBe(campaignData.mendatoryFieldsCampaign.campaignName);
         expect(postApiResponseBody.targetSize).toBe(campaignData.mendatoryFieldsCampaign.targetSize);
 
-     //   expect(validateSchema(campaign2Schema)).toBe(true);
+        expect(validateSchema(campaign2Schema)).toBe(true);
 
     });
 
