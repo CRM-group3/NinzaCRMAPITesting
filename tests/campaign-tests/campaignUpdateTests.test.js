@@ -4,7 +4,7 @@ const campaignData = require('../../test-data/campaignData/campaignputrequest.js
 
 test.describe('Update Campaign Api Tests', async () => {
 
-    test.only("Update a Campaign record", async ({ request }) => {
+    test("Update a Campaign record", async ({ request }) => {
 
         const endpoint = "campaign"
 

@@ -7,8 +7,10 @@ addFormats(ajv);
 /**
  * Validates data against a JSON schema.
  * If invalid, logs errors and returns false.
+ * schema - structure of the response
+ * data- json response
  */
-function validateSchema(schema, data) {
+function validateSchema(schema, data) { 
   const validate = ajv.compile(schema);
   const valid = validate(data);
   if (!valid) {
