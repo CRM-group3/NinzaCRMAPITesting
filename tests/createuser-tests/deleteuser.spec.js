@@ -10,13 +10,13 @@ import { test, expect } from '@playwright/test';
 
 test('Delete user by userId', async ({ request }) => {
   // Replace with your actual userId
-  const userId = "UID_02048";  
+  const userId = "UID_02206";  
 
   // Send DELETE request
   const response = await request.delete('/admin/user', {
-    params: { userId },  // query parameter
+    params: { userId },  // query parameter rmgyantra'  const password = 'rmgy@9999'
     headers: {
-      "Authorization": "Basic " + Buffer.from("admin:password").toString("base64"),
+      "Authorization": "Basic " + Buffer.from("rmgyantra:rmgy@9999").toString("base64"),
       "Content-Type": "application/json"
     }
   });
