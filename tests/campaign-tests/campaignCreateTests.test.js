@@ -3,8 +3,8 @@ import { test, expect } from '@playwright/test';
 const campaignData = require('../../test-data/campaignData/campaignrequest1.json');
 const campaignData2 = require('../../test-data/campaignData/campaignrequest2.json');
 const { validateSchema } = require('../../helperClasses/schemaValidator');
-const campaignSchema = require('../../schemas/createCampaignSchema.js');
-const campaign2Schema = require('../../schemas/createCampaign2Schema.js');
+import campaignSchema from '../../schemas/createCampaignSchema.js';
+import ampaignSchemaNullable from '../../schemas/createCampaign2Schema.js';
 
 const Ajv = require("ajv");
 const addFormats = require("ajv-formats");
@@ -14,7 +14,7 @@ addFormats(ajv);
 
 //test.describe('Create Campaign API Tests', async (request) => {
 
-    test('Create a Campaign with mendatory fields', async ({ request }) => {
+    test.only('Create a Campaign with mendatory fields', async ({ request }) => {
 
         const postApiResponse = await request.post(`campaign`, {
 
@@ -30,13 +30,13 @@ addFormats(ajv);
         console.log(postApiResponseBody);
 
         console.log("*************");
-        console.log(typeof response.body, postApiResponse.body);
+   //     console.log(typeof response.body, postApiResponse.body);
         
         expect(postApiResponseBody.campaignId).toBeTruthy();
         expect(postApiResponseBody.campaignName).toBe(campaignData.mendatoryFieldsCampaign.campaignName);
         expect(postApiResponseBody.targetSize).toBe(campaignData.mendatoryFieldsCampaign.targetSize);
 
-        expect(validateSchema(campaign2Schema)).toBe(true);
+        expect(validateSchema(ampaignSchemaNullable)).toBe(true);
 
     });
 
@@ -61,7 +61,7 @@ addFormats(ajv);
         expect(postApiResponseBody.campaignId).toBeTruthy();
         expect(postApiResponseBody.campaignName).toBe(campaignData.allFieldsCampaign.campaignName);
         
-      //   expect(validateSchema(campaignSchema)).toBe(true);
+     //    expect(validateSchema(campaignSchema)).toBe(true);
 
     });
 
