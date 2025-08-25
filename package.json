@@ -19,15 +19,15 @@
     "playwright": "^1.54.2"
   },
   "dependencies": {
-<<<<<<< HEAD
+
 
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
 
-=======
+
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
->>>>>>> 172ce0cb439a1cdec2a448da31f10ba07217834a
+
     "dotenv": "^17.2.1",
     "luxon": "^3.7.1",
     "mysql2": "^3.14.3"
