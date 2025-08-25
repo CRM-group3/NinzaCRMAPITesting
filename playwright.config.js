@@ -70,7 +70,7 @@ export default defineConfig({
     //   use: { ...devices['iPhone 12'] },
     // },
 
-    /* Test against branded browsers. */
+    // /* Test against branded browsers. */
     // {
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
@@ -81,6 +81,8 @@ export default defineConfig({
     },
   ],
 
+  
+
   /* Run your local dev server before starting the tests */
   // webServer: {
   //   command: 'npm run start',
@@ -88,4 +90,3 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-
