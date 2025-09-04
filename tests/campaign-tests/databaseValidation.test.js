@@ -40,8 +40,8 @@ test('Create Campaign and Validate in DataBase', async ({ request }) => {
 
     //step 2: Query DB for the campaignId
     const [rows] = await dataBase.query(
-     //   'SELECT * FROM campaign WHERE campaign_id = ?', [campaignId]
-         'SELECT * FROM campaign WHERE campaign_name = ?',[newCampaign.campaignName]
+       'SELECT * FROM campaign WHERE campaign_id = ?', [campaignId]
+        // 'SELECT * FROM campaign WHERE campaign_name = ?',[newCampaign.campaignName]
     );
 
     // Validate DB entry exists-----

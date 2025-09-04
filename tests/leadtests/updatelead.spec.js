@@ -5,6 +5,8 @@ const LeadHelper = require('../../helperClasses/leadhelper');
 const BaseHelper = require('../../helperClasses/baseHelper');
 const baseHelper = new BaseHelper();
 
+const database = require('../../helperClasses/databaseUtility.js');
+
 test.describe.serial('Update Lead Flow', () => {
   let campaignId;
   let leadId;
@@ -47,7 +49,7 @@ test.describe.serial('Update Lead Flow', () => {
     leadId = leadBody.leadId;
   });
 
-  test('Update Lead and assert all fields', async ({ request }) => {
+  test('Update Lead and assert all mandatory fields', async ({ request }) => {
     const overrides = {
       name: "Updated Lead",
       company: "abc corp",
@@ -79,4 +81,83 @@ test.describe.serial('Update Lead Flow', () => {
     expect(body.phone).toBe(overrides.phone);
     expect(body.leadStatus).toBe(overrides.leadStatus);
   });
+
+test('Update Lead with invalid email format (422)', async ({ request }) => {
+    const overrides = {
+      email: "invalid-email-format"
+    };
+
+    const payload = LeadHelper.generateUpdateLeadPayload(leadId, campaignId, overrides);
+
+    const response = await request.put(`/lead?campaignId=${campaignId}&leadId=${leadId}`, {
+        data: payload,
+        headers: baseHelper.getAuthHeaders()
+    });
+
+    const body = await response.text();
+    console.log(`Update Lead with Invalid Email Status: ${response.status()}`);
+    console.log(`Update Lead with Invalid Email Response: ${body}`);
+
+    expect(response.status()).toBe(422);
+  });
+
+  test('Update non-existing lead (404)', async ({ request }) => {
+    const nonExistingLeadId = `nonexistent-${Date.now()}`;
+
+    const payload = LeadHelper.generateUpdateLeadPayload(nonExistingLeadId, campaignId, { name: "Non-existent Lead" });
+
+    const response = await request.put(`/lead?campaignId=${campaignId}&leadId=${nonExistingLeadId}`, {
+        data: payload,
+        headers: baseHelper.getAuthHeaders()
+    });
+
+    const body = await response.text();
+    console.log(`Update Non-existing Lead Status: ${response.status()}`);
+    console.log(`Update Non-existing Lead Response: ${body}`);
+
+    expect(response.status()).toBe(404);
+  });
+
+  test('Update Lead with invalid campaignId (400)', async ({ request }) => {
+    const invalidCampaignId = "invalid-campaign-id";
+
+    const payload = LeadHelper.generateUpdateLeadPayload(leadId, invalidCampaignId, { name: "Lead with Invalid Campaign" });
+
+    const response = await request.put(`/lead?campaignId=${invalidCampaignId}&leadId=${leadId}`, {
+        data: payload,
+        headers: baseHelper.getAuthHeaders()
+    });
+
+    const body = await response.text();
+    console.log(`Update Lead with Invalid Campaign ID Status: ${response.status()}`);
+    console.log(`Update Lead with Invalid Campaign ID Response: ${body}`);
+
+    expect(response.status()).toBe(400);
+  });
+
+ 
+
+  test.afterEach(async ({ request }) => {
+    // Cleanup - Delete created lead
+    if (leadId) {
+      const delLeadRes = await request.delete(`/lead?leadId=${leadId}`, {
+          headers: baseHelper.getAuthHeaders()
+      });
+      console.log(`Delete Lead Status: ${delLeadRes.status()}`);
+      leadId = null;
+    }
+
+    // Cleanup - Delete created campaign
+    if (campaignId) {
+      const delCampaignRes = await request.delete(`/campaign?campaignId=${campaignId}`, {
+          headers: baseHelper.getAuthHeaders()
+      });
+      console.log(`Delete Campaign Status: ${delCampaignRes.status()}`);
+      campaignId = null;
+    }
+  });
+
+
+
+
 });
